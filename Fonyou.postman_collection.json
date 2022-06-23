@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "cc386c1a-b7a9-41c3-bd35-f05e69ea190a",
+		"name": "Fonyou",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarExamenes",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CrearExamen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"prueba\",\r\n    \"preguntas\":[{\"pregunta\":\"¿Como se llama?\"}]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/examen/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"examen",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
